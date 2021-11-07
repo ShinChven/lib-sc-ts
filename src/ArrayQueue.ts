@@ -24,8 +24,8 @@ class ArrayQueue<T> {
      * push a task to the queue
      * @param task
      */
-    push = (task: T): void => {
-        this._queue.push(task);
+    push = (...task: T[]): void => {
+        this._queue.push(...task);
         if (!this._started) {
             this._run().then();
         }
