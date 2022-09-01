@@ -1,5 +1,5 @@
-import ArrayQueue from '../src/ArrayQueue';
-import sleep from '../src/sleep-promise';
+import ArrayQueue from '../../lib/ArrayQueue';
+import sleep from '../../lib/sleep';
 
 type Task = { name: string }
 

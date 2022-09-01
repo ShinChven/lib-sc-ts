@@ -1,6 +1,5 @@
 export type QueueTaskHandler<T> = (task: T) => Promise<void>
 
-
 /**
  * An array queue that executes tasks in looping.
  */
@@ -49,3 +48,7 @@ class ArrayQueue<T> {
 }
 
 export default ArrayQueue;
+
+if (typeof module !== 'undefined') {
+    module.exports = Object.assign(ArrayQueue, module.exports)
+}

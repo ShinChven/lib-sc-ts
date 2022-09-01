@@ -7,3 +7,7 @@ const sleep = (timeout: number) => new Promise<void>(resolve => {
 });
 
 export default sleep;
+
+if (typeof module !== 'undefined') {
+    module.exports = Object.assign(sleep, module.exports)
+}
